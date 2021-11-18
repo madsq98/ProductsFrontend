@@ -38,7 +38,7 @@ export class UpdateComponent implements OnInit {
       product.id = this.selectedProduct.id;
 
       this._productService.updateProduct(product).subscribe(product => {
-        this._router.navigateByUrl('products').then(r => {});
+        this._router.navigateByUrl('/').then(r => {});
       });
     }
   }
